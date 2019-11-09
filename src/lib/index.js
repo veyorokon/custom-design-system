@@ -1,3 +1,13 @@
+/*
+    Author: Vahid Eyorokon
+
+    Utility functions and commonly used fields
+*/
+
+/*
+    Imports
+*/
+
 import styled, {css} from "styled-components";
 import {
   layout,
@@ -5,6 +15,7 @@ import {
   margin,
   padding,
   space,
+  background,
   color,
   compose
 } from "styled-system";
@@ -17,6 +28,7 @@ const fontFields = compose(
 const defaultFields = compose(
   layout,
   typography,
+  background,
   margin,
   padding,
   space,

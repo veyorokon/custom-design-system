@@ -1,5 +1,16 @@
+/*
+    Author: Vahid Eyorokon
+*/
+
+/*
+    Imports
+*/
+
 import {system} from "styled-system";
 
+/*
+    Function that generate a 'styled-system' compatible field that can used with the theme.
+ */
 function configure(prop, shortName = [], scale = null) {
   let config = {[prop]: {property: prop}};
   if (scale) {

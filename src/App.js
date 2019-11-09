@@ -1,7 +1,15 @@
+/*
+    Author: Vahid Eyorokon
+*/
+
+/*
+    Imports
+*/
+
 import React from "react";
 import ReactDOM from "react-dom";
 import {Router, Route} from "react-router-dom";
-import Landing from "layouts/Landing.jsx";
+import Editor from "layouts/Editor.jsx";
 import {createBrowserHistory} from "history";
 import {ThemeProvider} from "styled-components";
 
@@ -11,7 +19,7 @@ const App = () =>
   ReactDOM.render(
     <ThemeProvider theme={theme}>
       <Router history={hist}>
-        <Route path="/" component={Landing} />
+        <Route path="/" component={Editor} />
       </Router>
     </ThemeProvider>,
     document.getElementById("root")

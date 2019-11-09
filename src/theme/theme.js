@@ -22,8 +22,11 @@ const theme = {
     bold: 700
   },
   colors: {
-    black: ["#000"],
-    white: ["#fff"]
+    blacks: ["#000"],
+    whites: ["#fff"],
+    greys: ["#7D8B98"],
+    oranges: ["#F87060"],
+    greens: ["#596657", "#697268"]
   },
   radii: [0, 2, 4]
 };

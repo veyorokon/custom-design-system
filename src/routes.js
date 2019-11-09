@@ -1,12 +1,20 @@
-import Landing from "views/Landing";
+/*
+    Author: Vahid Eyorokon
+*/
+
+/*
+    Imports
+*/
+
+import Editor from "views/Editor";
 
 const routes = [
   {
     path: "/",
-    name: "Landing",
-    rtlName: "Landing",
+    name: "Editor",
+    rtlName: "Editor",
     icon: null,
-    component: Landing,
+    component: Editor,
     layout: "/"
   }
 ];

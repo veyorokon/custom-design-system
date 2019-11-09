@@ -1,3 +1,11 @@
+/*
+    Author: Vahid Eyorokon
+*/
+
+/*
+    Imports
+*/
+
 import React from "react";
 import PropTypes from "prop-types";
 import styled, {withTheme} from "styled-components";
@@ -32,7 +40,6 @@ class Hidden extends React.Component {
   render() {
     const {children} = this.props;
     const display = this.getDisplayList();
-    console.log(display);
     return <HiddenBox display={display}>{children}</HiddenBox>;
   }
 }
