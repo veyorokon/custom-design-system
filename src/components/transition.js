@@ -9,6 +9,10 @@ import styled from "styled-components";
 import {compose} from "styled-system";
 import configure from "theme/config";
 
+/*
+// TODO: MAKE TRANSITION A HIGHER ORDER COMPONENT
+ */
+
 const transitionDuration = configure("transitionDuration", "duration");
 const transitionTimingFunction = configure(
   "transitionTimingFunction",

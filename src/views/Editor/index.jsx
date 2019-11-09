@@ -1,25 +1,32 @@
-/*
-    Author: Vahid Eyorokon
-*/
-
-/*
-    Imports
-*/
-
 import React from "react";
-import {Flex} from "components";
-import Sidebar from "./Components/Sidebar";
-import View from "./Components/View";
+import {Text, Hidden} from "components";
+import {responsive as r} from "lib";
 
-class Editor extends React.Component {
+class Landing extends React.Component {
   render() {
     return (
-      <Flex>
-        <Sidebar></Sidebar>
-        <View>Editor space</View>
-      </Flex>
+      <React.Fragment>
+        <Text
+          fs={r("30px -> 5rem")}
+          fw="bold"
+          color={"whites.0"}
+          bg={"blacks.0"}
+        >
+          Data
+        </Text>
+        <Hidden down bp={3}>
+          <Text
+            fs={r("30px --> 5rem")}
+            fw="bold"
+            color={"whites.0"}
+            bg={"blacks.0"}
+          >
+            hidden
+          </Text>
+        </Hidden>
+      </React.Fragment>
     );
   }
 }
 
-export default Editor;
+export default Landing;

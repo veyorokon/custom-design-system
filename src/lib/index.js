@@ -8,43 +8,20 @@
     Imports
 */
 
-import styled, {css} from "styled-components";
-import {
-  layout,
-  typography,
-  margin,
-  padding,
-  space,
-  background,
-  color,
-  compose
-} from "styled-system";
-import {fontWeight, fontSize} from "theme";
+import styled from "styled-components";
 
-const fontFields = compose(
-  fontWeight,
-  fontSize
-);
-const defaultFields = compose(
-  layout,
-  typography,
-  background,
-  margin,
-  padding,
-  space,
-  color
-);
+import {generics} from "theme";
 
-const genericFields = css`
-  ${defaultFields}
-  ${fontFields}
-`;
-
-function themedComponent(ComponentToLoad, fields = []) {
-  return styled(ComponentToLoad)`
-    ${fields}
-    ${genericFields}
-  `;
+function themedComponent(ComponentToLoad, fields = [], withGenerics = true) {
+  if (withGenerics)
+    return styled(ComponentToLoad)`
+      ${fields}
+      ${generics}
+    `;
+  else
+    return styled(ComponentToLoad)`
+      ${fields}
+    `;
 }
 
 function formatValues(values) {

@@ -26,8 +26,4 @@ function configure(prop, shortName = [], scale = null) {
   return system(config);
 }
 
-const fontWeight = configure("fontWeight", "fw", "fontWeights");
-const fontSize = configure("fontSize", "fs", "fontSizes");
-
 export default configure;
-export {fontWeight, fontSize};
