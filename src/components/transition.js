@@ -20,7 +20,7 @@ const transitionTimingFunction = configure(
 );
 const transitionDelay = configure("transitionDelay", "delay");
 
-const transitionFields = compose(
+const transition = compose(
   transitionDuration,
   transitionTimingFunction,
   transitionDelay
@@ -28,7 +28,7 @@ const transitionFields = compose(
 
 const Transition = styled.span`
   transition-property: ${props => props.transition};
-  ${transitionFields};
+  ${transition};
 `;
 
 export default Transition;

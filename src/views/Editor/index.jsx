@@ -1,19 +1,39 @@
 import React from "react";
-import {Text, Hidden} from "components";
+import {Text, Hidden, Transition, Animate, Box, Input} from "components";
 import {responsive as r} from "lib";
+import {keyframes} from "styled-components";
+
+const appear = keyframes`
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; }
+`;
 
 class Landing extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <Box>
         <Text
           fs={r("30px -> 5rem")}
           fw="bold"
           color={"whites.0"}
           bg={"blacks.0"}
         >
-          Data
+          <Transition transition={"all"} duration={".3s"}>
+            <Animate
+              animation={appear}
+              animationDuration={".5s"}
+              animationTimingFunction={"ease-in-out"}
+              animationDelay={".2s"}
+            >
+              Test
+            </Animate>
+          </Transition>
         </Text>
+        <Box>
+          <Input width="50%" />
+        </Box>
         <Hidden down bp={3}>
           <Text
             fs={r("30px --> 5rem")}
@@ -21,10 +41,10 @@ class Landing extends React.Component {
             color={"whites.0"}
             bg={"blacks.0"}
           >
-            hidden
+            Hidden
           </Text>
         </Hidden>
-      </React.Fragment>
+      </Box>
     );
   }
 }

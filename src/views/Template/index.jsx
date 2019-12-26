@@ -1,5 +1,5 @@
 import React from "react";
-import {Text, Animate, Transition, Hidden} from "components";
+import {Text, Hidden, Transition, Animate} from "components";
 import {responsive as r} from "lib";
 import {keyframes} from "styled-components";
 
@@ -38,16 +38,7 @@ class Landing extends React.Component {
             color={"whites.0"}
             bg={"blacks.0"}
           >
-            <Transition transition={"all"} duration={".3s"}>
-              <Animate
-                animation={appear}
-                duration={".5s"}
-                function={"ease-in-out"}
-                delay={".2s"}
-              >
-                hidden
-              </Animate>
-            </Transition>
+            Hidden
           </Text>
         </Hidden>
       </React.Fragment>

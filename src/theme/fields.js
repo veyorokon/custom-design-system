@@ -13,14 +13,19 @@ import {compose} from "styled-system";
      Fields
  */
 
+const width = configure("width", [], "space");
+const height = configure("height", [], "space");
+
 const background = configure("background", ["bg", "background"], "colors");
 const color = configure("color", "color", "colors");
 
 const fontWeight = configure("fontWeight", "fw", "fontWeights");
 const fontSize = configure("fontSize", "fs", "fontSizes");
+const lineHeight = configure("lineHeight", "lh");
 const typography = compose(
   fontWeight,
-  fontSize
+  fontSize,
+  lineHeight
 );
 
 const marginTop = configure("marginTop", ["marginTop", "mt"], "space");
@@ -54,13 +59,33 @@ const generics = compose(
   margin,
   padding,
   background,
-  color
+  color,
+  width,
+  height
 );
+
+const animationDuration = configure("animationDuration");
+const animationTimingFunction = configure("animationTimingFunction");
+const animationDelay = configure("animationDelay");
+const animationFillMode = configure("animationFillMode");
+
+const animationFields = compose(
+  animationDuration,
+  animationTimingFunction,
+  animationDelay,
+  animationFillMode
+);
+
+const display = configure("display");
+const flexGrow = configure("flexGrow");
+
+const borderRadius = configure("borderRadius", ["br"]);
 
 export {
   generics,
   background,
   color,
+  lineHeight,
   typography,
   fontWeight,
   fontSize,
@@ -73,5 +98,15 @@ export {
   paddingTop,
   paddingLeft,
   paddingRight,
+  animationFields,
+  animationDuration,
+  animationTimingFunction,
+  animationDelay,
+  animationFillMode,
+  display,
+  flexGrow,
+  borderRadius,
+  width,
+  height,
   paddingBottom
 };
