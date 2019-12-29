@@ -64,7 +64,7 @@ const transitionDuration = configure("transitionDuration", "duration");
 const transitionTimingFunction = configure("transitionTimingFunction");
 const transitionDelay = configure("transitionDelay", "delay");
 
-const transition = compose(
+const transitionFields = compose(
   transitionDuration,
   transitionTimingFunction,
   transitionDelay
@@ -78,7 +78,7 @@ const generics = compose(
   color,
   width,
   height,
-  transition
+  transitionFields
 );
 
 const animationDuration = configure("animationDuration");
@@ -127,7 +127,7 @@ export {
   width,
   height,
   paddingBottom,
-  transition,
+  transitionFields,
   transitionDuration,
   transitionTimingFunction,
   transitionDelay,

@@ -10,6 +10,8 @@ const appear = keyframes`
     opacity: 1; }
 `;
 
+// COMBINE ANIMATION AND PARSE INTO FIELDS
+
 class Landing extends React.Component {
   render() {
     return (

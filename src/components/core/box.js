@@ -5,8 +5,7 @@
 /*
     Imports
 */
-import {themedComponent} from "theme";
-import {borderRadius} from "theme";
+import {borderRadius, themedComponent} from "theme";
 import styled from "styled-components";
 
 const Box = themedComponent(
