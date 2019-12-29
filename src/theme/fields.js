@@ -96,7 +96,7 @@ const animationFields = compose(
 const display = configure("display");
 const flexGrow = configure("flexGrow");
 
-const borderRadius = configure("borderRadius", ["br"]);
+const borderRadius = configure("borderRadius", "br");
 const opacity = configure("opacity");
 
 export {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {themedComponent} from "lib";
+import {themedComponent} from "theme";
 import Box from "components/core/box";
 
 /*

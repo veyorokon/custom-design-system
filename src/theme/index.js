@@ -1,5 +1,6 @@
 import theme from "./theme";
 import configure from "./config";
+import themedComponent from "./themedComponent";
 import {
   generics,
   background,
@@ -69,5 +70,6 @@ export {
   transitionDuration,
   transitionTimingFunction,
   transitionDelay,
-  opacity
+  opacity,
+  themedComponent
 };

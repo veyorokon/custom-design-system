@@ -5,10 +5,14 @@
 /*
     Imports
 */
-import {themedComponent} from "lib";
+import {themedComponent} from "theme";
 import styled from "styled-components";
 import {borderRadius} from "theme";
 
-const Button = themedComponent(styled.button``, [borderRadius]);
+const Button = themedComponent(
+  styled.button`
+    ${borderRadius}
+  `
+);
 
 export default Button;

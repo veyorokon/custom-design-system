@@ -5,9 +5,13 @@
 /*
     Imports
 */
-import {themedComponent} from "lib";
-import {borderRadius} from "styled-system";
+import {themedComponent} from "theme";
+import {borderRadius} from "theme";
 import styled from "styled-components";
 
-const Box = themedComponent(styled.div``, [borderRadius]);
+const Box = themedComponent(
+  styled.div`
+    ${borderRadius}
+  `
+);
 export default Box;

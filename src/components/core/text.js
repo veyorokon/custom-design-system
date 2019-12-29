@@ -5,7 +5,7 @@
 /*
     Imports
 */
-import {themedComponent} from "lib";
+import {themedComponent} from "theme";
 import styled from "styled-components";
 
 const Text = themedComponent(styled.p``);
