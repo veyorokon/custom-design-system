@@ -8,6 +8,7 @@
 import styled from "styled-components";
 import {keyframes} from "styled-components";
 import {animationFields} from "theme";
+import Box from "./box";
 /*
     Keyframes
 */
@@ -18,7 +19,7 @@ const appear = keyframes`
     opacity: 1; }
 `;
 
-const Animate = styled.span`
+const Animate = styled(Box)`
   animation-name: ${props => props.animation};
   ${animationFields};
 `;

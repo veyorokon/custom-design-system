@@ -60,6 +60,16 @@ const padding = compose(
   paddingRight
 );
 
+const transitionDuration = configure("transitionDuration", "duration");
+const transitionTimingFunction = configure("transitionTimingFunction");
+const transitionDelay = configure("transitionDelay", "delay");
+
+const transition = compose(
+  transitionDuration,
+  transitionTimingFunction,
+  transitionDelay
+);
+
 const generics = compose(
   typography,
   margin,
@@ -67,7 +77,8 @@ const generics = compose(
   background,
   color,
   width,
-  height
+  height,
+  transition
 );
 
 const animationDuration = configure("animationDuration");
@@ -82,20 +93,11 @@ const animationFields = compose(
   animationFillMode
 );
 
-const transitionDuration = configure("transitionDuration", "duration");
-const transitionTimingFunction = configure("transitionTimingFunction");
-const transitionDelay = configure("transitionDelay", "delay");
-
-const transition = compose(
-  transitionDuration,
-  transitionTimingFunction,
-  transitionDelay
-);
-
 const display = configure("display");
 const flexGrow = configure("flexGrow");
 
 const borderRadius = configure("borderRadius", ["br"]);
+const opacity = configure("opacity");
 
 export {
   generics,
@@ -128,5 +130,6 @@ export {
   transition,
   transitionDuration,
   transitionTimingFunction,
-  transitionDelay
+  transitionDelay,
+  opacity
 };

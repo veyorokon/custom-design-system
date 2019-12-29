@@ -1,5 +1,5 @@
 import React from "react";
-import {Text, Flex, Hidden, Transition, Animate, Box, Input} from "components";
+import {Text, Flex, Hidden, Animate, Box, Input} from "components";
 import {responsive as r} from "lib";
 import {keyframes} from "styled-components";
 
@@ -14,24 +14,25 @@ class Landing extends React.Component {
   render() {
     return (
       <Box>
-        <Text
-          fs={r("30px -> 5rem")}
-          fw="bold"
-          color={"whites.0"}
+        <Animate
+          animation={appear}
+          animationDuration={".5s"}
+          animationTimingFunction={"ease-in-out"}
+          animationDelay={".2s"}
           bg={"blacks.0"}
         >
-          <Transition transition={"all"} duration={".3s"}>
-            <Animate
-              animation={appear}
-              animationDuration={".5s"}
-              animationTimingFunction={"ease-in-out"}
-              animationDelay={".2s"}
-            >
-              Test
-            </Animate>
-          </Transition>
-        </Text>
-        <Flex padding="5px">
+          <Text
+            transition={"all"}
+            transitionDuration={".3s"}
+            fs={r("30px -> 5rem")}
+            fw="bold"
+            color={"whites.0"}
+          >
+            Test
+          </Text>
+        </Animate>
+
+        <Flex p={3}>
           <Input width="50%" />
         </Flex>
         <Hidden down bp={3}>

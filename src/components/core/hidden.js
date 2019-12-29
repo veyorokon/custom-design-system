@@ -8,10 +8,11 @@
 
 import React from "react";
 import styled from "styled-components";
-import {display} from "theme";
+import {display, opacity} from "theme";
 
 const HiddenBox = styled.span`
   ${display};
+  ${opacity}
   overflow: hidden;
 `;
 
@@ -38,6 +39,7 @@ class Hidden extends React.Component {
 
   render() {
     const {children} = this.props;
+
     const display = this.getDisplayList();
     return <HiddenBox display={display}>{children}</HiddenBox>;
   }

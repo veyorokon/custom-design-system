@@ -31,7 +31,8 @@ import {
   transition,
   transitionDuration,
   transitionTimingFunction,
-  transitionDelay
+  transitionDelay,
+  opacity
 } from "./fields";
 
 export default theme;
@@ -67,5 +68,6 @@ export {
   transition,
   transitionDuration,
   transitionTimingFunction,
-  transitionDelay
+  transitionDelay,
+  opacity
 };

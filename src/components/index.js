@@ -5,16 +5,14 @@ import Input from "./core/input";
 import Button from "./core/button";
 
 import Animate, {appear} from "./core/animation";
-import Transition from "./transition";
 import Hidden from "./core/hidden";
 import {Tabs, TabHeaders, TabContents, Tab, Panel} from "./composite/tabs";
-
+import withTransition from "./higherOrder/withTransition";
 export {
   Text,
   Box,
   Flex,
   Animate,
-  Transition,
   Hidden,
   Button,
   Input,
@@ -23,5 +21,6 @@ export {
   TabContents,
   Tab,
   Panel,
-  appear
+  appear,
+  withTransition
 };
