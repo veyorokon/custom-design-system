@@ -32,7 +32,10 @@ const marginTop = configure("marginTop", ["marginTop", "mt"], "space");
 const marginBottom = configure("marginBottom", ["marginBottom", "mb"], "space");
 const marginLeft = configure("marginLeft", ["marginLeft", "ml"], "space");
 const marginRight = configure("marginRight", ["marginRight", "mr"], "space");
+const marginAll = configure("margin", "m", "space");
+
 const margin = compose(
+  marginAll,
   marginTop,
   marginBottom,
   marginLeft,
@@ -47,7 +50,10 @@ const paddingBottom = configure(
 );
 const paddingLeft = configure("paddingLeft", ["paddingLeft", "pl"], "space");
 const paddingRight = configure("paddingRight", ["paddingRight", "pr"], "space");
+const paddingAll = configure("padding", "p", "space");
+
 const padding = compose(
+  paddingAll,
   paddingTop,
   paddingBottom,
   paddingLeft,
@@ -74,6 +80,16 @@ const animationFields = compose(
   animationTimingFunction,
   animationDelay,
   animationFillMode
+);
+
+const transitionDuration = configure("transitionDuration", "duration");
+const transitionTimingFunction = configure("transitionTimingFunction");
+const transitionDelay = configure("transitionDelay", "delay");
+
+const transition = compose(
+  transitionDuration,
+  transitionTimingFunction,
+  transitionDelay
 );
 
 const display = configure("display");
@@ -108,5 +124,9 @@ export {
   borderRadius,
   width,
   height,
-  paddingBottom
+  paddingBottom,
+  transition,
+  transitionDuration,
+  transitionTimingFunction,
+  transitionDelay
 };

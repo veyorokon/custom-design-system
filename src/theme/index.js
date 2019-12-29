@@ -27,7 +27,11 @@ import {
   borderRadius,
   width,
   height,
-  display
+  display,
+  transition,
+  transitionDuration,
+  transitionTimingFunction,
+  transitionDelay
 } from "./fields";
 
 export default theme;
@@ -59,5 +63,9 @@ export {
   borderRadius,
   width,
   height,
-  display
+  display,
+  transition,
+  transitionDuration,
+  transitionTimingFunction,
+  transitionDelay
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import {Text, Hidden, Transition, Animate, Box, Input} from "components";
+import {Text, Flex, Hidden, Transition, Animate, Box, Input} from "components";
 import {responsive as r} from "lib";
 import {keyframes} from "styled-components";
 
@@ -31,9 +31,9 @@ class Landing extends React.Component {
             </Animate>
           </Transition>
         </Text>
-        <Box>
+        <Flex padding="5px">
           <Input width="50%" />
-        </Box>
+        </Flex>
         <Hidden down bp={3}>
           <Text
             fs={r("30px --> 5rem")}

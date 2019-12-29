@@ -7,7 +7,7 @@ import Button from "./core/button";
 import Animate, {appear} from "./core/animation";
 import Transition from "./transition";
 import Hidden from "./core/hidden";
-import {Tabs, TabHeaders, TabComponents, Tab, Panel} from "./tabs";
+import {Tabs, TabHeaders, TabContents, Tab, Panel} from "./composite/tabs";
 
 export {
   Text,
@@ -20,7 +20,7 @@ export {
   Input,
   Tabs,
   TabHeaders,
-  TabComponents,
+  TabContents,
   Tab,
   Panel,
   appear
