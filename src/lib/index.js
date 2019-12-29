@@ -11,6 +11,7 @@
 import styled from "styled-components";
 
 import {generics} from "theme";
+import updateState from "./updateState";
 
 function themedComponent(ComponentToLoad, fields = [], withGenerics = true) {
   if (withGenerics)
@@ -66,4 +67,4 @@ function responsive(values) {
   return output;
 }
 
-export {themedComponent, responsive};
+export {themedComponent, updateState, responsive};
