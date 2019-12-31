@@ -3,7 +3,6 @@ import {Flex, Box, Button, Input, Text} from "./core";
 import Animate, {appear} from "./core/animation";
 import Hidden from "./core/hidden";
 import {Tabs, TabHeaders, TabContents, Tab, Panel} from "./composite/tabs";
-import withTransition from "./higherOrder/withTransition";
 export {
   Text,
   Box,
@@ -17,6 +16,5 @@ export {
   TabContents,
   Tab,
   Panel,
-  appear,
-  withTransition
+  appear
 };

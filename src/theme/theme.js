@@ -1,3 +1,5 @@
+import defaultProps from "./defaultProps";
+
 const theme = {
   breakpoints: [
     "20em",
@@ -29,10 +31,7 @@ const theme = {
     greens: ["#596657", "#697268"]
   },
   radii: [0, 2, 4],
-  defaultProps: {
-    transition: "all",
-    transitionDuration: "0.3s"
-  }
+  defaultProps
 };
 
 export default theme;
