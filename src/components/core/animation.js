@@ -8,7 +8,7 @@
 import styled from "styled-components";
 import {keyframes} from "styled-components";
 import {animationFields} from "theme";
-import {Box} from ".";
+import {themedComponent} from "theme";
 /*
     Keyframes
 */
@@ -19,17 +19,17 @@ const appear = keyframes`
     opacity: 1; }
 `;
 
-const Animate = styled(Box)`
-  animation-name: ${props => props.animation};
-  ${animationFields};
-`;
+const Animate = themedComponent(
+  styled.div`
+    animation-name: ${props => props.animation};
+    ${animationFields};
+  `,
+  "Animate"
+);
 
 Animate.defaultProps = {
-  animationFillMode: "both",
   animation: appear,
-  animationDuration: "0.5s",
-  animationTimingFunction: "ease-in-out",
-  animationDelay: ".2s"
+  ...Animate.defaultProps
 };
 
 export default Animate;
