@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {themedComponent} from "theme";
-import Box from "components/core/box";
+import {Box} from "components/core";
 
 /*
 <Tabs>

@@ -1,14 +1,6 @@
 import React from "react";
 import {Text, Flex, Hidden, Animate, Box, Input} from "components";
 import {responsive as r} from "lib";
-import {keyframes} from "styled-components";
-
-const appear = keyframes`
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; }
-`;
 
 // COMBINE ANIMATION AND PARSE INTO FIELDS
 
@@ -16,20 +8,8 @@ class Landing extends React.Component {
   render() {
     return (
       <Box>
-        <Animate
-          animation={appear}
-          animationDuration={".5s"}
-          animationTimingFunction={"ease-in-out"}
-          animationDelay={".2s"}
-          bg={"blacks.0"}
-        >
-          <Text
-            transition={"all"}
-            transitionDuration={".3s"}
-            fs={r("30px -> 5rem")}
-            fw="bold"
-            color={"whites.0"}
-          >
+        <Animate bg={"blacks.0"}>
+          <Text fs={r("30px -> 5rem")} fw="bold" color={"whites.0"}>
             Test
           </Text>
         </Animate>

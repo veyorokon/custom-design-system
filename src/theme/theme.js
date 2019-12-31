@@ -28,7 +28,11 @@ const theme = {
     oranges: ["#F87060"],
     greens: ["#596657", "#697268"]
   },
-  radii: [0, 2, 4]
+  radii: [0, 2, 4],
+  defaultProps: {
+    transition: "all",
+    transitionDuration: "0.3s"
+  }
 };
 
 export default theme;

@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
-import {generics} from "theme";
+import theme, {generics} from "theme";
 
 export default function themedComponent(ComponentToLoad) {
-  return styled(ComponentToLoad)`
+  const component = styled(ComponentToLoad)`
     ${generics}
   `;
+  component.defaultProps = theme.defaultProps;
+  return component;
 }

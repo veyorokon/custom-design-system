@@ -1,8 +1,4 @@
-import Text from "./core/text";
-import Flex from "./core/flex";
-import Input from "./core/input";
-import Button from "./core/button";
-import Box from "./core/box";
+import {Flex, Box, Button, Input, Text} from "./core";
 
 import Animate, {appear} from "./core/animation";
 import Hidden from "./core/hidden";

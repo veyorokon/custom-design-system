@@ -8,7 +8,7 @@
 import styled from "styled-components";
 import {keyframes} from "styled-components";
 import {animationFields} from "theme";
-import Box from "./box";
+import {Box} from ".";
 /*
     Keyframes
 */
@@ -25,7 +25,11 @@ const Animate = styled(Box)`
 `;
 
 Animate.defaultProps = {
-  animationFillMode: "both"
+  animationFillMode: "both",
+  animation: appear,
+  animationDuration: "0.5s",
+  animationTimingFunction: "ease-in-out",
+  animationDelay: ".2s"
 };
 
 export default Animate;
