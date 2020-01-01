@@ -1,8 +1,6 @@
 import React from "react";
-import {Text, Flex, Hidden, Animate, Box, Input} from "components";
+import {Box, Text, Flex, Hidden, Animate, Input} from "components";
 import {responsive as r} from "lib";
-
-// COMBINE ANIMATION AND PARSE INTO FIELDS
 
 class Landing extends React.Component {
   render() {
