@@ -10,7 +10,10 @@ export default function themedComponent(
     ${generics}
   `;
   defaultPropName && theme.defaultProps[defaultPropName]
-    ? (component.defaultProps = theme.defaultProps[defaultPropName])
-    : (component.defaultProps = {});
+    ? (component.defaultProps = {
+        ...theme.defaultProps.All,
+        ...theme.defaultProps[defaultPropName]
+      })
+    : (component.defaultProps = theme.defaultProps.All);
   return component;
 }

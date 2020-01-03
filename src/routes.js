@@ -6,15 +6,15 @@
     Imports
 */
 
-import Editor from "views/Editor";
+import Landing from "views/Landing";
 
 const routes = [
   {
     path: "/",
-    name: "Editor",
-    rtlName: "Editor",
+    name: "Landing",
+    rtlName: "Landing",
     icon: null,
-    component: Editor,
+    component: Landing,
     layout: "/"
   }
 ];
