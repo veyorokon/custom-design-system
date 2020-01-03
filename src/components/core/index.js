@@ -40,6 +40,8 @@ Input.defaultProps = {
   borderRadius: "4px"
 };
 
-const Text = themedComponent(styled.p``);
+const Text = themedComponent(styled.p`
+  margin: ${props => (props.p ? "1rem" : props.h1 ? "2rem" : "initial")};
+`);
 
 export {Text, Box, Button, Flex, Input};
