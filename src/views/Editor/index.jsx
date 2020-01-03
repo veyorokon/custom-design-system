@@ -15,7 +15,7 @@ class Landing extends React.Component {
         <Flex p={3}>
           <Input width="50%" />
         </Flex>
-        <Hidden down bp={3}>
+        <Hidden down bp={1}>
           <Text
             fs={r("30px --> 5rem")}
             fw="bold"

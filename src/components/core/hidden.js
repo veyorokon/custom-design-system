@@ -28,7 +28,6 @@ class Hidden extends React.Component {
       }
       displayList.push("initial");
     } else {
-      displayList.push("initial");
       for (i = 0; i < bp; i++) {
         displayList.push("initial");
       }
