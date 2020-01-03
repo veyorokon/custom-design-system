@@ -11,31 +11,35 @@ import styled from "styled-components";
 const Box = themedComponent(
   styled.div`
     ${borderRadius}
-  `,
-  "Box"
+  `
 );
 const Button = themedComponent(
   styled.button`
     ${borderRadius}
-  `,
-  "Button"
+  `
 );
 
 const Flex = themedComponent(
   styled.div`
     ${display}
     ${flexGrow}
-  `,
-  "Flex"
+  `
 );
+Flex.defaultProps = {display: "flex", flexGrow: 1};
 
 const Input = themedComponent(
   styled.input`
     outline: none;
-  `,
-  "Input"
+  `
 );
+Input.defaultProps = {
+  border: "1px solid lightslategrey",
+  padding: "1rem",
+  fontSize: "1.6rem",
+  lineHeight: "1",
+  borderRadius: "4px"
+};
 
-const Text = themedComponent(styled.p``, "Text");
+const Text = themedComponent(styled.p``);
 
 export {Text, Box, Button, Flex, Input};

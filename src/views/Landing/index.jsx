@@ -7,7 +7,7 @@ class Landing extends React.Component {
     return (
       <Box>
         <Animate bg={"blacks.0"}>
-          <Text fs={r("30px -> 5rem")} fw="bold" color={"whites.0"}>
+          <Text fs={r("30px ---> 5rem")} fw="bold" color={"whites.0"}>
             Test
           </Text>
         </Animate>
@@ -17,7 +17,7 @@ class Landing extends React.Component {
         </Flex>
         <Hidden down bp={3}>
           <Text
-            fs={r("30px --> 5rem")}
+            fs={r("30px ----> 5rem")}
             fw="bold"
             color={"whites.0"}
             bg={"blacks.0"}

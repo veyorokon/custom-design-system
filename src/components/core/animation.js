@@ -29,7 +29,10 @@ const Animate = themedComponent(
 
 Animate.defaultProps = {
   animation: appear,
-  ...Animate.defaultProps
+  animationFillMode: "both",
+  animationDuration: "0.5s",
+  animationTimingFunction: "ease-in-out",
+  animationDelay: ".2s"
 };
 
 export default Animate;
